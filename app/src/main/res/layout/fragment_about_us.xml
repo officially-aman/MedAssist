@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contact_us_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9FFFFFF">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/aboutus"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Medical Prescription Generator"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/contact_us_email"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/contact_us_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="This application generates the prescription after detecting the spoken symptom.A doctor at the clinic can use it to create a prescription for typical symptoms.Instead of continually writing it down, the doctor may simply pronounce the symptom, and an automated prescription will be created. Because of the time and paper savings, more patients may be seen. Patients can utilise it to get relief right away since it will maintain their doctor's prescribed medications."
+            android:textColor="#2196F3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtContact" />
+
+        <TextView
+            android:id="@+id/contact_us_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:text="Guidelines"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contact_us_email" />
+
+
+        <TextView
+            android:id="@+id/txtContactAlternative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:paddingTop="6dp"
+            android:text="The home page consist of 3 buttons"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/contact_us_email"
+            app:layout_constraintStart_toStartOf="@+id/txtContact"
+            app:layout_constraintTop_toBottomOf="@+id/contact_us_phone" />
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/contact_us_email"
+            app:layout_constraintStart_toStartOf="@+id/txtContact"
+            app:layout_constraintTop_toBottomOf="@+id/txtContactAlternative" />
+
+        <TextView
+            android:id="@+id/txtAboutDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:text="-it will lead you to the page where the guidelines are mentioned."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/txtAbout"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbout" />
+
+        <TextView
+            android:id="@+id/txtTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:paddingTop="16dp"
+            android:text="Test"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/contact_us_email"
+            app:layout_constraintStart_toStartOf="@+id/txtContact"
+            app:layout_constraintTop_toBottomOf="@+id/txtAboutDesc" />
+
+        <TextView
+            android:id="@+id/txtTestDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:text="-it will lead you to another page where you can speak the symptom by clicking on the button."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/txtTest"
+            app:layout_constraintTop_toBottomOf="@+id/txtTest" />
+
+        <TextView
+            android:id="@+id/txtTrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:paddingTop="16dp"
+            android:text="Test"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/contact_us_email"
+            app:layout_constraintStart_toStartOf="@+id/txtContact"
+            app:layout_constraintTop_toBottomOf="@+id/txtTestDesc" />
+
+        <TextView
+            android:id="@+id/txtTrainDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="40dp"
+            android:text="- it will train for new speaker, you'll have to speak 20 utterances of each word and a new set of lambdas
+will be created in which you can copy to main folder and test the model for your voice;
+it takes a little time to speak and train the model."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/txtTrain"
+            app:layout_constraintTop_toBottomOf="@+id/txtTrain" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
